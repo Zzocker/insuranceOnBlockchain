@@ -1,6 +1,6 @@
-# insuranceOnBlockchain
+# Insurance On Blockchain
 This project just a simple implementation of project done by @horeaporutiu
-You can find project at : https://github.com/Zzocker/build-blockchain-insurance-app
+You can find project at : https://github.com/IBM/build-blockchain-insurance-app
 
 # What different in This Project:
 1. Runs on lattest hyperledger binaries.
