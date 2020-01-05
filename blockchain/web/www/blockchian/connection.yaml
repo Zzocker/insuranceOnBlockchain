@@ -1,0 +1,53 @@
+name : 'mychannel'
+description: 'Network on HF v1'
+version: '1.0.0'
+
+organizations:
+    insurance:
+        mspid: InsuranceOrgMSP
+        peers:
+            - insurance-peer
+        certificateAuthorities:
+            - insurance-ca
+    police:
+        mspid: PoliceOrgMSP
+        peers:
+            - police-peer
+        certificateAuthorities:
+            - police-ca
+    repiarShop:
+        mspid: RepairShopOrgMSP
+        peers:
+            - repair-peer
+        certificateAuthorities:
+            - repair-ca
+    shop:
+        mspid: ShopOrgMSP
+        peers:
+            - shop-peer
+        certificateAuthorities:
+            - shop-ca
+Orderer:
+    orderer0:
+        url: grpcs://localhost:7050
+        tlsCACerts:
+            pem: ../certs/ordererOrg.pem
+Peers:
+    insurance-peer:
+        url: grpcs://localhost:7051
+        tlsCACerts:
+            pem: ../certs/insuranceOrg.pem
+    police-peer:
+        url: grpcs://localhost:10051
+        tlsCACerts: ../certs/policeOrg.pem
+CertificateAuthorities:
+    insurance-ca:
+        url: grpcs://localhost:7054
+        caName: insurance-ca
+    tlsCACerts:
+        pem: ../certs/insuranceOrg.pem
+        
+
+    
+
+    

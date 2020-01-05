@@ -14,7 +14,7 @@ Organizations:
       Name: ShopOrgMSP
       ID: ShopOrgMSP
       MSPDir: network/cli/peers/peerOrganizations/shop-org/msp
-      AnchorPeers:
+      AnchorPeers:InsuranceMSP
       - Host: shop-peer
         Port: 7051
     - &RepairShopOrg

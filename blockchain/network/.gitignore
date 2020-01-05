@@ -1,1 +1,10 @@
 cli
+insuranceCA
+insurancePeer
+orderer
+policeCA
+policePeer
+repairShopCA
+repairShopPeer
+shopCA
+shopPeer
